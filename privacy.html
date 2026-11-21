@@ -9,7 +9,7 @@
 <body>
 <header class="nav"><div class="wrap nav-inner"><a class="brand" href="index.html"><span class="logo">H</span> HERITAGE AI</a><nav class="links"><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="guide.html">Guide</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></header>
 <main class="legal"><div class="wrap"><article><p>HERITAGE AI PRIVACY POLICY</p>
-<p>Version: 2026-11-17</p>
+<p>Version: 2026-11-22</p>
 <h2>1. WHO WE ARE</h2>
 <p>Heritage AI is an Android voice and chat assistant built by Daniel Damilare, an independent developer in Nigeria ("we", "us"). We are the data controller for the personal data described in this policy. Contact: dandamdad2000@gmail.com</p>
 <h2>2. THE SHORT VERSION</h2>
@@ -21,7 +21,7 @@
 </ul>
 <h2>3. WHAT WE COLLECT AND WHY</h2>
 <ul>
-<li>What you give us: messages you type or speak, your name and "about yourself" text if you add them, your settings, and an API key if you choose to use your own AI provider.</li>
+<li>What you give us: messages you type or speak, your name and "about yourself" text if you add them, your settings, photos you choose to share with the assistant (taken with the camera or picked from your gallery), and an API key if you choose to use your own AI provider.</li>
 <li>What the app creates on your phone: conversation history, summaries, and "memories" (facts the assistant saves so it can help you better).</li>
 <li>Device information the app uses only when needed: the list of apps installed on your phone (so it can open them), your notifications (only when you ask about them), your contacts (so you can call or text people by name), and the Android features you switch on (see section 6).</li>
 </ul>
@@ -30,6 +30,7 @@
 <p>When you send a message, the app sends it to our server (hosted on Cloudflare), which forwards it to AI providers: Groq (the language model) and, for web lookups, Tavily (search). A request can include:</p>
 <ul>
 <li>your message and recent conversation;</li>
+<li>a photo, only when you attach one: it is shrunk first and sent with that one message to an AI vision model run by Groq (earlier photos are never re-sent);</li>
 <li>your name, "about yourself" text and saved memories;</li>
 <li>the current date and time;</li>
 <li>the names of apps installed on your phone;</li>
@@ -46,6 +47,7 @@
 <p>Every permission is optional, is used only for the feature it belongs to, and can be turned off in your phone settings.</p>
 <ul>
 <li>Microphone: voice questions and wake word.</li>
+<li>Camera (optional): taking a photo to ask about. Choosing a photo from your gallery uses Android's photo picker, which only shares the pictures you select.</li>
 <li>Contacts and Phone: calling and texting people by name.</li>
 <li>Notification access: reading notifications when you ask.</li>
 <li>Accessibility service: the volume-button shortcut and performing actions you ask for (such as tapping or scrolling).</li>
@@ -54,9 +56,9 @@
 </ul>
 <p>We do not use these permissions to collect data for any other purpose.</p>
 <h2>7. SECURITY AND STORAGE</h2>
-<p>Your conversations are stored in a database encrypted with a key kept in the Android Keystore. A personal API key you add is encrypted on your phone. Traffic to our server and to AI providers uses HTTPS. No system is perfectly secure, so please keep your phone locked and updated.</p>
+<p>Your conversations are stored in a database encrypted with a key kept in the Android Keystore, and photos you share are stored encrypted on your phone the same way. A personal API key you add is encrypted on your phone. Traffic to our server and to AI providers uses HTTPS. No system is perfectly secure, so please keep your phone locked and updated.</p>
 <h2>8. RETENTION</h2>
-<p>Data stays on your phone until you delete it or uninstall the app. We keep no account for you on our servers.</p>
+<p>Data, including photos you shared, stays on your phone until you delete the chat, use Delete all my data, or uninstall the app. We keep no account for you on our servers.</p>
 <h2>9. YOUR RIGHTS</h2>
 <p>Under the Nigeria Data Protection Act 2023 you have the right to access, correct, delete and restrict the use of your personal data, to object to processing, to data portability, and to withdraw consent. Most of this you can do inside the app. For anything else, email dandamdad2000@gmail.com. You also have the right to complain to the Nigeria Data Protection Commission (www.ndpc.gov.ng).</p>
 <h2>10. CHILDREN</h2>
